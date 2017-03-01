@@ -1,0 +1,13 @@
+<div ng-controller='questionController'>
+  <a href="#!/dashboard">Home</a> | <a href="#!/">Logout</a>
+
+  <h1>New Question</h1>
+  <h3>{{errors.ask_question.message}}</h1>
+  <form ng-submit='addQuestion()'>
+  <p>Question: <input type="text" ng-model='question.question'></p>
+  <p>Description(optional): <input type="text" ng-model='question.description'></p>
+  <input type="submit" >
+  <a href="#!/dashboard"><button type="button" >Cancel</button></a>
+  </form>
+
+</div>

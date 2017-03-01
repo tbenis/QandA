@@ -1,0 +1,15 @@
+<div ng-controller='answerController'>
+  <a href="#!/dashboard">Home</a> | <a href="#!/question/{{question._id}}">Go back to question</a> | <a href="#!/logout">logout</a>
+
+  <br>
+  <h1>{{question.question}}</</h1>
+  <p>{{question.description}}</</p>
+
+  <h3>{{errors.answer_err.message}}</h1>
+  <form ng-submit='answerQuestion()'>
+    <p>Your Answer: <input type="text" ng-model='answer.answer'></p>
+    <p>Supporting Details for ur answer(optional): <input type="text" ng-model='answer.details'></p>
+    <input type="submit" name="" value="Submit">
+    <a href="#!/dashboard"><button type="button" >Cancel</button></a>
+  </form>
+</div>
